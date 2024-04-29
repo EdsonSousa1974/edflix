@@ -127,6 +127,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+edflix-env/
 
 # Spyder project settings
 .spyderproject
