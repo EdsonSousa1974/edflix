@@ -1,0 +1,42 @@
+Criando ambiente virtual
+
+python.exe -m pip install --upgrade pip
+python -m pip install --user virtualenv
+
+python -m venv edflix-env
+
+PowerShell Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+edflix-env/Scripts/activate
+
+# Trabalhando com images
+python -m pip install pillow
+
+Instalando django no prompt de comando
+python -m pip install django
+python django-admin version nomeprojeto .
+
+Trabalhando com crispy
+python -m pip install django-crispy-forms
+python -m pip install crispy-bootstrap5
+
+python.exe -m pip install --upgrade pip
+
+Executando o serviço do projeto
+python manage.py runserver
+
+criando um módulo do projeto
+djando-admin startapp nomo_do_modulo
+
+Criando estrutura de dados básica do projeto
+python manage.py makemigrations
+python manage.py migrate
+
+# Criando um superuser do projeto
+python manage.py createsuperuser
+
+
+45. Projeto 6 - Criação de Sites com Django - Criando uma cópia do Netflix
+27/51 aulas
+
+Tab nine
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImlhdCI6MTcwOTc1OTEyMiwiZXhwIjoxNzA5NzYyNzIyLCJpc3MiOiJmaXJlYmFzZS1hZG1pbnNkay02cjM0eUB0YWJuaW5lLWF1dGgtMzQwMDE1LmlhbS5nc2VydmljZWFjY291bnQuY29tIiwic3ViIjoiZmlyZWJhc2UtYWRtaW5zZGstNnIzNHlAdGFibmluZS1hdXRoLTM0MDAxNS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6ImdpT001WUJwVmZPS0lUOWlKZ0ZtQUNneHRkWjIifQ.bNBSIRcPHqJeS_dylht7aR1mtdRDEahNsP_elPqvXCwOJoNoiEJKly8hN_fIWbnL1ey_KCyKZcSkxl79xa233-lOSQhOTjY9trpfvpxrV2D3zOIqiKpcwYGs-ZhMryTc7sHBKHpkjVC-q2nJGGYIst7pYxUR9TiSty3ZmTNPxREAXSU0sU0pKLYaaHbMmKPcl2awLd7QvCf0AKapI7GTICqoitZA-_hm8SfWV7Wj3laJ0pstovxDzcKu5eEyXd5eHTyjW7ApfBTCwdROf0UF_0Du4IDVlhMwTLojVCu1NtpDRu0Izg8flmkFmydJ_UFAMNkPyk-ppRlh0nKe3DUkOw
