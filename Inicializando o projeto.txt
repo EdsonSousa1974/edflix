@@ -13,6 +13,7 @@ python -m pip install pillow
 
 Instalando django no prompt de comando
 python -m pip install django
+python -m pip install Django==4.2
 python django-admin version nomeprojeto .
 
 Trabalhando com crispy
