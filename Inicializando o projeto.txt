@@ -41,3 +41,24 @@ python manage.py createsuperuser
 
 Tab nine
 eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImlhdCI6MTcwOTc1OTEyMiwiZXhwIjoxNzA5NzYyNzIyLCJpc3MiOiJmaXJlYmFzZS1hZG1pbnNkay02cjM0eUB0YWJuaW5lLWF1dGgtMzQwMDE1LmlhbS5nc2VydmljZWFjY291bnQuY29tIiwic3ViIjoiZmlyZWJhc2UtYWRtaW5zZGstNnIzNHlAdGFibmluZS1hdXRoLTM0MDAxNS5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6ImdpT001WUJwVmZPS0lUOWlKZ0ZtQUNneHRkWjIifQ.bNBSIRcPHqJeS_dylht7aR1mtdRDEahNsP_elPqvXCwOJoNoiEJKly8hN_fIWbnL1ey_KCyKZcSkxl79xa233-lOSQhOTjY9trpfvpxrV2D3zOIqiKpcwYGs-ZhMryTc7sHBKHpkjVC-q2nJGGYIst7pYxUR9TiSty3ZmTNPxREAXSU0sU0pKLYaaHbMmKPcl2awLd7QvCf0AKapI7GTICqoitZA-_hm8SfWV7Wj3laJ0pstovxDzcKu5eEyXd5eHTyjW7ApfBTCwdROf0UF_0Du4IDVlhMwTLojVCu1NtpDRu0Izg8flmkFmydJ_UFAMNkPyk-ppRlh0nKe3DUkOw
+
+Deploy 
+    com https://railway.app/
+    mudar em setting DEBUG = True para false
+
+    ## gerencia o banco de dados
+    pip install gunicorn 
+
+    ## gerencia arquivos estáticos
+    pip install whitenoise
+    
+    ## gerencia bibliotecas do python
+    pip freeze > requirements.txt
+
+    ## biblioteca para o django se conectar com o database url
+    pip install dj-database-url
+
+    PostgreSQL - bibliotecast 
+    pip install psycopg2
+
+
