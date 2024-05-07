@@ -89,7 +89,7 @@ DATABASES = {
 import dj_database_url
 import os
 
-DATABASE_URL = os.getenv('postgresql://postgres:mSiKqgjjtJLVLENpBSzHWudZWIcDSUwo@roundhouse.proxy.rlwy.net:33396/railway')
+DATABASE_URL = os.getenv('postgresql://postgres:mznbMkPDcoGubTrABKxLpFsjJnEJSiNm@monorail.proxy.rlwy.net:35382/railway')
 
 if DATABASE_URL:
     DATABASES = {
