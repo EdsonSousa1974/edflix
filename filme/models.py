@@ -8,6 +8,7 @@ LISTA_CATEGORIAS = (
     ("ANALISE", "Análise"),
     ("APRESENTACAO", "Apresentação"),
     ("PROGRAMACAO", "Programação"),
+    ("COACH", "Coaching"),
     ("OUTROS", "Outros"),
 )
 # Criando model filmes
@@ -16,12 +17,10 @@ class Filme(models.Model):
     titulo = models.CharField(max_length=100)
     thumb = models.ImageField(upload_to='thumb_filmes')
     descricao = models.TextField(max_length=1000)
-    diretor = models.CharField(max_length=100)
+#    textolivre = models.TextField(max_length=1000)
     categoria = models.CharField(max_length=15, choices=LISTA_CATEGORIAS)
     visualizacoes = models.IntegerField(default=0)
     data_criacao = models.DateTimeField(default=timezone.now)
-    ano = models.IntegerField(default=0)
-    duracao = models.IntegerField(default=0)
 
     def __str__(self):
         return self.titulo
