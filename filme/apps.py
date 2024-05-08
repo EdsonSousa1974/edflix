@@ -9,10 +9,10 @@ def ready(self):
     from .models import Usuario
     import os
     
-    email = os.getenv('EMAIL_ADMIN')
-    senha = os.getenv('SENHA_ADMIN')
+    email_os = os.getenv("EMAIL_ADMIN")
+    senha_os = os.getenv("SENHA_ADMIN")
     
-    if not Usuario.objects.filter(email=email).exists():
-        Usuario.objects.create_superuser(username="admin", email=email, password=senha,
+    if not Usuario.objects.filter(email=email_os).exists():
+        Usuario.objects.create_superuser(username="admin", email=email_os, password=senha_os,
                                          is_active=True, is_staff=True)
     
