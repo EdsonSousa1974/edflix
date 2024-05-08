@@ -25,14 +25,14 @@ TOKEN_CSRF = os.getenv('TOKEN_CSRF')
 
 if TOKEN_CSRF:
     SECRET_KEY = TOKEN_CSRF
-    CSRF_TRUSTED_ORIGINS = ['https://edflix-production.up.railway.app/']    
+    CSRF_TRUSTED_ORIGINS = ['https://edflix-production.up.railway.app']    
 else:
     SECRET_KEY = 'django-insecure-w6zt6kt#=_)8&gj3rl3pl0))6lfjkq%-8&_pgsq0d739=jybpf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["https://edflix-production.up.railway.app/", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["edflix-production.up.railway.app", "localhost", "127.0.0.1"]
 
 # Application definition
 
