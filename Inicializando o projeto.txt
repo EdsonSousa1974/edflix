@@ -65,3 +65,4 @@ Deploy
     pip freeze > requirements.txt
 
 
+   python -m pip install secrets
