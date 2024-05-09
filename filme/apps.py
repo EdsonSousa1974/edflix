@@ -16,6 +16,7 @@ def ready(self):
     usuarios = Usuario.objects.filter(email=email_os)    
     
     print ("Usuario: " + usuarios + " .fim")
+    print ("Email: " + email_os + " .fim")
     
     if not usuarios:
         Usuario.objects.create_superuser(username="admin", email=email_os, password=senha_os,
