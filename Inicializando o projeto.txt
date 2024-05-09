@@ -61,8 +61,4 @@ Deploy
     PostgreSQL - bibliotecast 
     pip install psycopg2-binary
     
-    pip install -r requirements.txt
     pip freeze > requirements.txt
-
-
-   python -m pip install secrets
