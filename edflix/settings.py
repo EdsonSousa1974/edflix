@@ -93,7 +93,7 @@ DATABASES = {
 }
 
 #"""
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_URL = os.getenv("postgresql://postgres:wnAhaxtFPnFYVhHDlrqSluLLXiCLxqBN@roundhouse.proxy.rlwy.net:29322/railway")
 
 if DATABASE_URL:
     DATABASES = {
