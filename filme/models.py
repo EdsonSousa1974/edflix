@@ -9,7 +9,7 @@ LISTA_CATEGORIAS = (
     ("APRESENTACAO", "Apresentação"),
     ("PROGRAMACAO", "Programação"),
     ("COACH", "Coaching"),
-    ("CULINARIA", "Culinária"),
+#aki    ("CULINARIA", "Culinária"),
     ("OUTROS", "Outros"),
 )
 # Criando model filmes
