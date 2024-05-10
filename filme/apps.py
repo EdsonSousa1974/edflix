@@ -18,6 +18,6 @@ def ready(self):
     print ("Usuario: " + usuarios + " .fim")
     print ("Email: " + email_os + " .fim")
     
-    if not usuarios:
-        Usuario.objects.create_superuser(username="admin", email=email_os, password=senha_os,
+    #if not usuarios:
+    Usuario.objects.create_superuser(username="admin", email=email_os, password=senha_os,
                                          is_active=True, is_staff=True)
