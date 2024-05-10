@@ -2,18 +2,17 @@ from django.db import models
 from django.utils import timezone
 from django.contrib.auth.models import AbstractUser
 
-
 # Create your models here.
+
 LISTA_CATEGORIAS = (
     ("ANALISE", "Análise"),
     ("APRESENTACAO", "Apresentação"),
     ("PROGRAMACAO", "Programação"),
     ("COACH", "Coaching"),
-#    ("CULINARIA", "Culinária"),
     ("OUTROS", "Outros"),
 )
-# Criando model filmes
 
+# Criando model filmes
 class Filme(models.Model):
     titulo = models.CharField(max_length=100)
     thumb = models.ImageField(upload_to='thumb_filmes')
