@@ -85,21 +85,22 @@ WSGI_APPLICATION = 'edflix.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-#"""
-DATABASE_URL = os.getenv("postgresql://postgres:wnAhaxtFPnFYVhHDlrqSluLLXiCLxqBN@roundhouse.proxy.rlwy.net:29322/railway")
-
-if DATABASE_URL:
-    DATABASES = {
-        'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800)        
-    }
-else:
-    DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
+#"""
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+if DATABASE_URL:
+    DATABASES = {
+        'default': {
+            dj_database_url.config(default=DATABASE_URL, conn_max_age=1800)        
+        }
+    }
 #"""
 
 # Password validation
