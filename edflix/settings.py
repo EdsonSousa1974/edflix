@@ -33,7 +33,7 @@ else:
 DEBUG = True
 
 ALLOWED_HOSTS = ["edflix-production.up.railway.app", "localhost", "127.0.0.1"]
-
+                    
 # Application definition
 
 INSTALLED_APPS = [
