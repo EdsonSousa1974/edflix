@@ -94,7 +94,8 @@ DATABASES = {
 
 DATABASE_URL = 'DATABASE_URL'
 
-DATABASE_URL = os.getenv('postgresql://postgres:uMAoRXUoOUgMPXFtnooarDOoVsKCtmIV@monorail.proxy.rlwy.net:40764/railway')
+DATABASE_URL = os.getenv('DATABASE_URL')
+
 if DATABASE_URL:
     DATABASES = {
         'default': dj_database_url.config(default=DATABASE_URL, conn_max_age=1800)        
@@ -141,8 +142,7 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
-   
+    BASE_DIR / "static",   
 ]
 
 MEDIA_URL ='media/'
