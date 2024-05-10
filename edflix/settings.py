@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic',
     'filme',
     'crispy_forms',
     'crispy_bootstrap5',
@@ -146,7 +145,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",   
 ]
 
-# aki STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 MEDIA_URL ='media/'
 
