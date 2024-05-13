@@ -105,7 +105,7 @@ if DATABASE_URL:
 # (copie a URL direto do Railway e substitua na variavel DATABASE_URL) 
 #DATABASE_URL = 'postgres://...' 
 
-DATABASE_URL = 'postgres://postgres:cFBjQKhdjZJCdDqUSpKMAmOOaneTtXUm@monorail.proxy.rlwy.net:44915/railway'
+DATABASE_URL = 'postgresql://postgres:cXQpXXXfVApJkCxXdeTBQiqsMywdKTCV@roundhouse.proxy.rlwy.net:48774/railway'
 
 if DATABASE_URL:    
     DATABASES = {
