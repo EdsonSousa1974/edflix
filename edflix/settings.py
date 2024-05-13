@@ -104,7 +104,7 @@ if DATABASE_URL:
 
 # (copie a URL direto do Railway e substitua na variavel DATABASE_URL) 
 #DATABASE_URL = 'postgres://...' 
-DATABASE_URL = os.getenv("postgresql://postgres:cFBjQKhdjZJCdDqUSpKMAmOOaneTtXUm@monorail.proxy.rlwy.net:44915/railway")
+gitDATABASE_URL = 'postgresql://postgres:cFBjQKhdjZJCdDqUSpKMAmOOaneTtXUm@monorail.proxy.rlwy.net:44915/railway'
 if DATABASE_URL:    
     DATABASES = {
         'default': dj_database_url.config(
