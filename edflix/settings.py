@@ -107,7 +107,7 @@ DATABASE_URL = 'postgres://postgres:xpMMdJflUICWmSqcIfFmIilzAWMgKojQ@monorail.pr
     } 
 """
 DATABASES['default'] = dj_database_url.config(
-    default=DATABASE_URL,
+    default='postgres://postgres:xpMMdJflUICWmSqcIfFmIilzAWMgKojQ@monorail.proxy.rlwy.net:25148/railway',
     conn_max_age=600,
     conn_health_checks=True,
 )
