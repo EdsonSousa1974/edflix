@@ -97,14 +97,14 @@ DATABASES = {
 
 DATABASE_URL = 'postgres://postgres:xpMMdJflUICWmSqcIfFmIilzAWMgKojQ@monorail.proxy.rlwy.net:25148/railway'
 
-if DATABASE_URL:    
-    DATABASES = {
-        'default': dj_database_url.config(
-            default=DATABASE_URL ,            
-            conn_max_age=1800,            
-            conn_health_checks=True,        
-            )    
-        }        
+#if DATABASE_URL:    
+DATABASES = {
+    'default': dj_database_url.config(
+        default=DATABASE_URL,            
+        conn_max_age=1800,            
+        conn_health_checks=True,        
+        )    
+    }        
 
 #"""
 
