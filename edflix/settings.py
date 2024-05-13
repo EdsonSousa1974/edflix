@@ -91,7 +91,7 @@ DATABASES = {
     }
 }
 
-#"""
+"""
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 if DATABASE_URL:
@@ -100,7 +100,19 @@ if DATABASE_URL:
             default=DATABASE_URL,
             conn_max_age=1800)
         }  
-#"""
+"""
+
+# (copie a URL direto do Railway e substitua na variavel DATABASE_URL) 
+#DATABASE_URL = 'postgres://...' 
+DATABASE_URL = os.getenv("DATABASE_URL")
+if DATABASE_URL:    
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=DATABASE_URL ,            
+            conn_max_age=1800,            
+            conn_health_checks=True,        
+            )    
+        }        
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
