@@ -95,7 +95,7 @@ DATABASES = {
 #DATABASE_URL = os.getenv("DATABASE_URL")
 #DATABASE_URL = 'postgres://...' 
 
-DATABASE_URL = 'postgresql://postgres:xpMMdJflUICWmSqcIfFmIilzAWMgKojQ@monorail.proxy.rlwy.net:25148/railway'
+DATABASE_URL = 'postgres://postgres:xpMMdJflUICWmSqcIfFmIilzAWMgKojQ@monorail.proxy.rlwy.net:25148/railway'
 
 if DATABASE_URL:    
     DATABASES = {
