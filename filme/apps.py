@@ -8,11 +8,11 @@ class FilmeConfig(AppConfig):
         from .models import Usuario
         import os
         
-        email_os = os.getenv("EMAIL_ADMIN")
-        senha_os = os.getenv("SENHA_ADMIN")
+        email = os.getenv("EMAIL_ADMIN")
+        senha = os.getenv("SENHA_ADMIN")
         
-        usuarios = Usuario.objects.filter(username=email_os)    
+        usuarios = Usuario.objects.filter(username=email)    
         if not usuarios:
-            Usuario.objects.create_superuser(username="admin", email=email_os, password=senha_os,
+            Usuario.objects.create_superuser(username="admin", email=email, password=senha,
                                              is_active=True, is_staff=True)
 #"""
