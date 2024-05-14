@@ -59,6 +59,8 @@ Deploy
     ## biblioteca para o django se conectar com o database url
     pip install dj-database-url
 
+    pip install environs
+
     PostgreSQL - bibliotecast 
     pip install psycopg2-binary
     

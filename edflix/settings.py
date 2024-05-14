@@ -13,6 +13,11 @@ from pathlib import Path
 import dj_database_url
 import os
 
+from environs import Env
+
+env = Env()
+env.read_env()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -91,10 +96,10 @@ DATABASES = {
     }
 }
 
-#DATABASE_URL = os.getenv("DATABASE_URL")
-DATABASE_URL = 'postgresql://postgres:xpMMdJflUICWmSqcIfFmIilzAWMgKojQ@monorail.proxy.rlwy.net:25148/railway'
+DATABASE_URL =  env.dj_db_url("DATABASE_URL")
+#DATABASE_URL = 'postgresql://postgres:xpMMdJflUICWmSqcIfFmIilzAWMgKojQ@monorail.proxy.rlwy.net:25148/railway'
 
-""""
+#""""
 if DATABASE_URL:    
     DATABASES = {
         'default': dj_database_url.config(
@@ -103,7 +108,7 @@ if DATABASE_URL:
             conn_health_checks=True,        
             )    
         } 
-"""
+#"""
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
