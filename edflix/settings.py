@@ -96,10 +96,10 @@ DATABASES = {
     }
 }
 
-#DATABASE_URL =  env.dj_db_url("DATABASE_URL")
-DATABASE_URL = 'postgresql://postgres:xpMMdJflUICWmSqcIfFmIilzAWMgKojQ@monorail.proxy.rlwy.net:25148/railway'
+DATABASE_URL =  env.dj_db_url("DATABASE_URL")
+#DATABASE_URL = 'postgresql://postgres:xpMMdJflUICWmSqcIfFmIilzAWMgKojQ@monorail.proxy.rlwy.net:25148/railway'
 
-#""""
+#"""
 if DATABASE_URL:    
     DATABASES = {
         'default': dj_database_url.config(
