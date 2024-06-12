@@ -10,10 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 from pathlib import Path
+from environs import Env
 import dj_database_url
 import os
-
-from environs import Env
 
 env = Env()
 env.read_env()
@@ -96,7 +95,11 @@ DATABASES = {
     }
 }
 
-DATABASE_URL =  env.dj_db_url("DATABASE_PRIVATE_URL")
+import os
+from dj_database_url import parse as dj_database_url
+DATABASE_URL = os.environ.get('DATABASE_PRIVATE_URL')
+
+#DATABASE_URL =  env.dj_db_url('DATABASE_PRIVATE_URL')
 #DATABASE_URL = 'postgresql://postgres:xpMMdJflUICWmSqcIfFmIilzAWMgKojQ@postgres.railway.internal:5432/railway'
 
 if DATABASE_URL:    
