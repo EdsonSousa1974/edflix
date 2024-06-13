@@ -10,10 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 from pathlib import Path
-#import dj_database_url
+import dj_database_url
 import os
-
-from dj_database_url import parse as dj_database_url
 
 from environs import Env
 env = Env()
@@ -97,15 +95,10 @@ DATABASES = {
     }
 }
 
-"""
-import os
-from dj_database_url import parse as dj_database_url
-
-#"""
 #DATABASE_URL =  env.dj_db_url('DATABASE_URL')
-DATABASE_URL = os.environ.get('DATABASE_URL')
+#DATABASE_URL = os.environ.get('DATABASE_URL')
 #DATABASE_URL = os.getenv('DATABASE_URL')
-#DATABASE_URL = 'postgresql://postgres:MuxyEIZuPePaHLbkowJEgBPBeTUieiOO@monorail.proxy.rlwy.net:40019/railway'
+DATABASE_URL = 'postgresql://postgres:MuxyEIZuPePaHLbkowJEgBPBeTUieiOO@monorail.proxy.rlwy.net:40019/railway'
 
 if DATABASE_URL:
     DATABASES = {
