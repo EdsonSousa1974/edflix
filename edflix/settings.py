@@ -102,8 +102,8 @@ import os
 from dj_database_url import parse as dj_database_url
 
 #"""
-DATABASE_URL =  env.dj_db_url('DATABASE_URL')
-#DATABASE_URL = os.environ.get('DATABASE_URL')
+#DATABASE_URL =  env.dj_db_url('DATABASE_URL')
+DATABASE_URL = os.environ.get('DATABASE_URL')
 #DATABASE_URL = os.getenv('DATABASE_URL')
 #DATABASE_URL = 'postgresql://postgres:MuxyEIZuPePaHLbkowJEgBPBeTUieiOO@monorail.proxy.rlwy.net:40019/railway'
 
