@@ -95,7 +95,7 @@ DATABASES = {
     }
 }
 
-"""
+#"""
 #DATABASE_URL =  env.dj_db_url('DATABASE_URL')
 #DATABASE_URL = os.environ.get('DATABASE_URL')
 #DATABASE_URL = os.getenv('DATABASE_URL')
